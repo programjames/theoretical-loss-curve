@@ -81,7 +81,7 @@ $$\sum_{k=1}^{|g|} g^{kn} = \begin{cases}\frac{g^{|g|n+n} - g^n}{g^n-1}=\frac{g^
 
 To capture the entire group of dynamics, we have to project onto the fundamental representation of our group:
 
-$$\Omega(x) = \sum_{g\in G}\chi(g)f(g, x).$$
+$$\Omega(x) = \sum_{g\in G}\chi(g)\Omega(g, x).$$
 
 Finally, to get back the partition function, we exponentiate:
 
