@@ -35,11 +35,11 @@ $$\text{Loss}\sim \exp(-\text{explanations})\Longleftrightarrow \text{explanatio
 
 However, wouldn't it be more useful to go the other way? To estimate the loss, at the beginning of a training run, by counting how many concepts we expect our neural network to learn? That is our goal for today.
 
-If we assume our optimizers are perfect, we should be able to use every bit of training data, and the probability a neural net learns any particular concept will be
+If we assume our optimizers are perfect, we should be able to use every bit of training data, and the proportion of the time a neural net has learned any particular concept will be
 
 $$x = \exp(t - |\text{explanation}|),$$
 
-where $t$ is the training time and $|\text{explanation}|$ the bit-length of the concept. The probability it learns the concept twice is $x^2$, thrice is $x^3$, and so on. We can use the partition function
+where $t$ is the training iteration and $|\text{explanation}|$ the bit-length of the concept. The proportion it learns the concept twice is $x^2$, thrice is $x^3$, and so on. We can use the partition function
 
 $$\mathcal{Z}(x) = \sum_{n=0}^\infty x^n =  1 + x + x^2 + x^3 + \cdots = (1-x)^{-1}$$
 
