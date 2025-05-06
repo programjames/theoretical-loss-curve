@@ -2,10 +2,12 @@
 
 > The simplest explanation is exponentially more important.
 
-Suppose I give you a pattern, and ask you to explain what is going on: $$1, 2, 4, 8, 16, \dots$$Several explanations might come to mind:
+Suppose I give you a pattern, and ask you to explain what is going on:
+$$1, 2, 4, 8, 16, \dots$$
+Several explanations might come to mind:
 - "The powers of two,"
 - "Moser's circle problem,"
-- "$\frac{x^4}{24}-\frac{x^3}{12}+\frac{11x^2}{24}+\frac{7x}{12}+1$,"
+- " $\frac{x^4}{24}-\frac{x^3}{12}+\frac{11x^2}{24}+\frac{7x}{12}+1$ ,"
 - "The counting numbers in an alien script,"
 - "Fine-structure constants."
 
