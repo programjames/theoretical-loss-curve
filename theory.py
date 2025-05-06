@@ -10,8 +10,8 @@ def subscript(n):
 def anyon(n):
     return prod((1-x**d)**-mobius(d) for d in divisors(n)).cancel()
 
-def count(O):
-    return (x * O.diff(x) / O).cancel()
+def count(Z):
+    return (x * Z.diff(x) / Z).cancel()
 
 def loss(n, points):
     n = count(anyon(n))
