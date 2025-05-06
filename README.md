@@ -29,7 +29,7 @@ Let's take the view that explanations are simply a string of bits, and our inter
 
 Suppose we are training a neural network, and we want to count how many explanations it has learned. Empirically, we know the loss comes from all the missing explanations, so
 
-$$\text{Loss}\sim \exp(-\#\text{explanations})\Longleftrightarrow \#\text{explanations}\sim -\log(\text{Loss}).$$
+$$\text{Loss}\sim \exp(-\text{\char{35}explanations})\Longleftrightarrow \text{explanations}\sim -\log(\text{Loss}).$$
 
 However, wouldn't it be more useful to go the other way? To estimate the loss, at the beginning of a training run, by counting how many concepts we expect our neural network to learn? That is our goal for today.
 
