@@ -64,7 +64,7 @@ $$\Omega(g, x) = \sum_{n=1}^\infty \sum_{k=1}^{|g|}\frac{(g^kx)^n}{n} = \sum_{n=
 since[^3]
 
 $$\sum_{k=1}^{|g|} g^{kn} = \begin{cases}\frac{g^{|g|n+n} - g^n}{g^n-1}=\frac{g^n-g^n}{g^n-1} = 0&n\not\equiv 0\pmod{|g|}\\
-1+1+\cdots+1=|g|&n\equiv 0\pmod{|g|}.\end{cases}$$
+1+1+\cdots+1 = |g| &n\equiv 0\pmod{|g|}.\end{cases}$$
 
 To capture the entire group of dynamics, we have to project onto the fundamental representation of our group:
 
@@ -72,7 +72,7 @@ $$\Omega(x) = \sum_{g\in G}\chi(g)f(g, x).$$
 
 Finally, to get back the partition function, we exponentiate:
 
-$$\mathcal{Z}(x)=\exp\Omega(x).$$
+$$\mathcal{Z}(x)=\exp(\Omega(x)).$$
 
 For the three groups in question, we have
 
