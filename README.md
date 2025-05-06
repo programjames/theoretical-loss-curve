@@ -1,3 +1,15 @@
+---
+title: Theoretical Loss Curves
+author: James Camacho
+colorlinks: true
+header-includes: |
+        \newcommand*{\lsim}{\mathord{\sim}}
+        \usepackage{framed}\usepackage{xcolor}\let\oldquote=\quote
+        \let\endoldquote=\endquote
+        \colorlet{shadecolor}{orange!15}
+        \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
+---
+
 ## Solomonoff's Lightsaber
 
 > The simplest explanation is exponentially more important.
@@ -55,7 +67,7 @@ Now, not every model learns by simply memorizing the training distribution. We'l
 - $\mathbb{Z}_2$—The network can only learn a concept once. Equivalently, we can pretend that the network alternates between learning and forgetting a concept. This is for extremely small models, or grokking in larger training runs.
 - $\mathbb{Z}_6$—One network is trying to learn and imitate a concept, while another network is trying to discriminate what is real and what is an imitation. Any time you add adversarial loss—such as with GANs or the information bottleneck—you'll get this learning dynamic.
 
-![Z6 Learning Dynamic.png](diagram_Z6.png)
+![Z6 Learning Dynamic.png](diagram_Z6.png){ width=50% }
 
 In general, a learning dynamic can be described by some group $G$. It's possible to go through several steps at once, so every group element $g\in G$ creates a sub-dynamic. Also, we could begin at any step in the dynamic, at $g$, $g^2$, or so on, up to $g^{|g|}=1$ where $|g|$ is the order of $g$. So, for a particular sub-dynamic $g$, our density function becomes
 
@@ -100,10 +112,11 @@ $$\begin{aligned}
 
 for $x \propto \exp(t)$. Here are the plots, with theory on the left and experiment on the right:
 
-| ![](theory_Z1.png){ width=45% } | ![](experiment_Z1.png){ width=45% } |
-|:------------------------------:|:----------------------------------:|
-| ![](theory_Z2.png){ width=45% } | ![](experiment_Z2.png){ width=45% } |
-| ![](theory_Z6.png){ width=45% } | ![](experiment_Z6.png){ width=45% } |
+|||
+| :--------------------------------------: | :----------------------------------------------: |
+| ![Z1 Theory](theory_Z1.png){ width=45% } | ![Z1 Experiment](experiment_Z1.png){ width=45% } |
+| ![Z2 Theory](theory_Z2.png){ width=45% } | ![Z2 Experiment](experiment_Z2.png){ width=45% } |
+| ![Z3 Theory](theory_Z6.png){ width=45% } | ![Z3 Experiment](experiment_Z6.png){ width=45% } |
 
 
 [^2]: This is known as the [plethystic logarithm](https://en.wikipedia.org/wiki/Plethystic_exponential).
