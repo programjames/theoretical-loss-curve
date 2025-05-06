@@ -1,4 +1,14 @@
-# Theoretical Loss Curves
+---
+title: Theoretical Loss Curves
+author: James Camacho
+colorlinks: true
+header-includes: |
+        \newcommand*{\lsim}{\mathord{\sim}}
+        \usepackage{framed}\usepackage{xcolor}\let\oldquote=\quote
+        \let\endoldquote=\endquote
+        \colorlet{shadecolor}{orange!15}
+        \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
+---
 
 ## Solomonoff's Lightsaber
 
